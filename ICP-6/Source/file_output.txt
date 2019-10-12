@@ -1,0 +1,55 @@
+[
+    {
+        "id": "a7b32ff4.a3252",
+        "type": "tab",
+        "label": "File Node Demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a48c1489.3e29a8",
+        "type": "http in",
+        "z": "a7b32ff4.a3252",
+        "name": "",
+        "url": "/hello-file",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "a0aaf470.879108"
+            ]
+        ]
+    },
+    {
+        "id": "8a9ccc90.8d355",
+        "type": "http response",
+        "z": "a7b32ff4.a3252",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 420,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a0aaf470.879108",
+        "type": "file in",
+        "z": "a7b32ff4.a3252",
+        "name": "",
+        "filename": "C:\\Users\\Mikaela\\Documents\\hellofile.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "8a9ccc90.8d355"
+            ]
+        ]
+    }
+]

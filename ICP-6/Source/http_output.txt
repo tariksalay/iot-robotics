@@ -1,0 +1,56 @@
+[
+    {
+        "id": "59851f2b.10cdd",
+        "type": "tab",
+        "label": "Http Input Output",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c5ec5a34.14bd28",
+        "type": "http in",
+        "z": "59851f2b.10cdd",
+        "name": "",
+        "url": "/hello-headers",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "70850782.8756d8"
+            ]
+        ]
+    },
+    {
+        "id": "70850782.8756d8",
+        "type": "template",
+        "z": "59851f2b.10cdd",
+        "name": "Hello World Page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Hello World!",
+        "output": "str",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "1acd71.b347d28f"
+            ]
+        ]
+    },
+    {
+        "id": "1acd71.b347d28f",
+        "type": "http response",
+        "z": "59851f2b.10cdd",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 460,
+        "y": 140,
+        "wires": []
+    }
+]

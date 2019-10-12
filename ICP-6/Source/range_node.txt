@@ -1,0 +1,103 @@
+[
+    {
+        "id": "6ebd377e.a57a78",
+        "type": "tab",
+        "label": "Range Node Demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "499f72eb.4ac84c",
+        "type": "inject",
+        "z": "6ebd377e.a57a78",
+        "name": "",
+        "topic": "",
+        "payload": "300",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "a004602.39a93a"
+            ]
+        ]
+    },
+    {
+        "id": "c285b8a0.2da0b8",
+        "type": "inject",
+        "z": "6ebd377e.a57a78",
+        "name": "",
+        "topic": "",
+        "payload": "512",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "a004602.39a93a"
+            ]
+        ]
+    },
+    {
+        "id": "9bd32a21.f778a8",
+        "type": "inject",
+        "z": "6ebd377e.a57a78",
+        "name": "",
+        "topic": "",
+        "payload": "1023",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "a004602.39a93a"
+            ]
+        ]
+    },
+    {
+        "id": "a004602.39a93a",
+        "type": "range",
+        "z": "6ebd377e.a57a78",
+        "minin": "1",
+        "maxin": "1100",
+        "minout": "0",
+        "maxout": "5",
+        "action": "scale",
+        "round": true,
+        "property": "payload",
+        "name": "",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "ac366897.ede8c8"
+            ]
+        ]
+    },
+    {
+        "id": "ac366897.ede8c8",
+        "type": "debug",
+        "z": "6ebd377e.a57a78",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 460,
+        "y": 160,
+        "wires": []
+    }
+]

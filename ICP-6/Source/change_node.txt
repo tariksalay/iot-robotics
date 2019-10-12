@@ -1,0 +1,71 @@
+[
+    {
+        "id": "432bdc76.003f64",
+        "type": "tab",
+        "label": "Change Node",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "43b9ebef.613ee4",
+        "type": "inject",
+        "z": "432bdc76.003f64",
+        "name": "",
+        "topic": "",
+        "payload": "hello",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "d3134faa.90958"
+            ]
+        ]
+    },
+    {
+        "id": "d3134faa.90958",
+        "type": "change",
+        "z": "432bdc76.003f64",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "this is not being analyzed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "3c06ed6c.676492"
+            ]
+        ]
+    },
+    {
+        "id": "3c06ed6c.676492",
+        "type": "debug",
+        "z": "432bdc76.003f64",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    }
+]

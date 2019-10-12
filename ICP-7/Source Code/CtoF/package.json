@@ -1,0 +1,15 @@
+{
+  "name": "node-red-contrib-example-luis-CtoF",
+  "version": "1.0.0",
+  "description": "A Node-RED node to change Celsius to Farenheith",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red":{
+        "nodes":{
+            "CtoF": "CtoF.js"
+        }
+    },
+  "author": "luis",
+  "license": "ISC"
+}

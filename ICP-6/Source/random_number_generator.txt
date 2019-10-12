@@ -1,0 +1,147 @@
+[
+    {
+        "id": "c1236994.6f65e8",
+        "type": "tab",
+        "label": "Random Number Generator",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fd2f3ebd.76dc3",
+        "type": "inject",
+        "z": "c1236994.6f65e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "730ecefa.193ef"
+            ]
+        ]
+    },
+    {
+        "id": "730ecefa.193ef",
+        "type": "function",
+        "z": "c1236994.6f65e8",
+        "name": "Random Number Generator",
+        "func": "msg_num = Math.floor((Math.random() * 100) + 1);\nmsg = {payload: msg_num}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "a7442e9a.8d9e8",
+                "32e5f54.cf0b30a"
+            ]
+        ]
+    },
+    {
+        "id": "a7442e9a.8d9e8",
+        "type": "switch",
+        "z": "c1236994.6f65e8",
+        "name": "",
+        "property": "payload.analyze",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "49",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "50",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "f0f68b62.c6ebf8"
+            ],
+            [
+                "dfbfae04.9dd76"
+            ],
+            [
+                "64fec098.0ae6"
+            ]
+        ]
+    },
+    {
+        "id": "32e5f54.cf0b30a",
+        "type": "debug",
+        "z": "c1236994.6f65e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f0f68b62.c6ebf8",
+        "type": "debug",
+        "z": "c1236994.6f65e8",
+        "name": "lessThan49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "dfbfae04.9dd76",
+        "type": "debug",
+        "z": "c1236994.6f65e8",
+        "name": "=50",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "64fec098.0ae6",
+        "type": "debug",
+        "z": "c1236994.6f65e8",
+        "name": "Greater than 50",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 340,
+        "wires": []
+    }
+]
