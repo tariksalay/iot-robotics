@@ -1,25 +1,36 @@
-Check Wiki page for further information
-Contact me at tariksalay@gmail.com
+# Internet of Things & Cognitive Robotics — Project Collection
 
-Part 1: IoT Programming with Arduino and Raspberry Pi
-Arduino and Raspberry Pi are general-purpose computer, usually with a Linux operating system, and the ability to run multiple programs. 
-My projects in part 1 include:
-•	Introduction to IoT & Sensors and working with basic projects
-•	Arduino Based Heartbeat monitoring using Cloud platform
-•	Weather Station for IoT using Arduino
-•	Arduino based Motion detection
-•	IoT based Arduino distance measurement
-•	Raspberry Pi based Twitter Bot
-•	Android IoT control
+**Arduino · Raspberry Pi · Sensors · Node-RED · Python · Dialogflow / Google Actions**
 
-Part 2: Node-RED and Cognitive Robotics Programming with Google Actions. Modern and future robots will have enough computational power to be able to reason continuously and deeply about themselves and their environments, hands-on-experiments with programming for cognitive robotics and innovative human-robot-computer interface.
-My projects in part 2 include:
+A historical collection of coursework experiments exploring connected devices, sensor data, automation, and conversational interfaces. The repository is organized into individual exercises and a project folder rather than one deployable application.
 
-•	Introduction to Node-RED and Developing First Flow on Node-RED
-•	Connecting and Visualizing Sensor data on Node-RED
-•	Publishing and Subscribing to
-•	IOT data on Node-RED
-•	Connecting to Web services and social-networking apps on Node-RED
-•	Introduction to Google Dialog-flow
-•	Google Actions with NodeJS Programming
-•	Creating a simple dialog flow model on Android
+## Learning areas
+
+### Part 1 — Sensors and connected devices
+
+The introductory exercises explore Arduino and Raspberry Pi applications, including heartbeat monitoring concepts, weather sensing, motion/distance measurement, and connected-device interactions.
+
+### Part 2 — IoT integration and conversational interfaces
+
+Later modules explore Node-RED flows, sensor-data visualization, publish/subscribe patterns, web-service integration, and introductory conversational experiences with Dialogflow and Google Actions.
+
+## Repository map
+
+| Path | Purpose |
+| --- | --- |
+| [ICP-1 through ICP-7](ICP-1) | Early exercises in IoT and sensor programming |
+| [MOD2-ICP1 through MOD2-ICP7](MOD2-ICP1) | Second-module exercises around integration and cognitive interfaces |
+| [LAB1](LAB1) | Laboratory work |
+| [PROJECT](PROJECT) | Course project materials |
+
+**Note:** Some exercises require external hardware, vendor accounts, APIs, or platforms that have changed since the work was created. There is no single supported install command for the entire repository.
+
+## Additional documentation
+
+See the [repository wiki](https://github.com/tariksalay/iot-robotics/wiki) for per-exercise writeups where available.
+
+## Portfolio context
+
+This repository documents my early hands-on experiments connecting hardware, data collection, and software workflows. It is preserved as learning work, not presented as a production IoT platform or a currently supported robotics system.
+
+[GitHub profile](https://github.com/tariksalay)
