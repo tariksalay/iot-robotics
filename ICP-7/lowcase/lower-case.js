@@ -3,6 +3,10 @@ module.exports = function(RED) {
         RED.nodes.createNode(this,config);
         var node = this;
         node.on('input', function(msg) {
+            if (typeof msg.payload !== 'string') {
+                node.error('payload must be a string', msg);
+                return;
+            }
             msg.payload = msg.payload.toLowerCase();
             node.send(msg);
         });
