@@ -1,36 +1,43 @@
-# Internet of Things & Cognitive Robotics — Project Collection
+# IoT and Cognitive Robotics Experiments
 
-**Arduino · Raspberry Pi · Sensors · Node-RED · Python · Dialogflow / Google Actions**
+**Arduino · Raspberry Pi · Sensors · Node-RED · Python**
 
-A historical collection of coursework experiments exploring connected devices, sensor data, automation, and conversational interfaces. The repository is organized into individual exercises and a project folder rather than one deployable application.
+A historical collection of hardware, messaging, automation, and conversational-interface exercises. Source snippets, flow exports, wiring references, images, and recordings are grouped by exercise rather than assembled into one supported platform.
 
-## Learning areas
+## What this project demonstrates
 
-### Part 1 — Sensors and connected devices
+- Connecting device code, local scripts, and flow-based integrations.
+- Tracing Node-RED messages and validating their payloads.
+- Separating hardware requirements from local software checks.
 
-The introductory exercises explore Arduino and Raspberry Pi applications, including heartbeat monitoring concepts, weather sensing, motion/distance measurement, and connected-device interactions.
+## Start here
 
-### Part 2 — IoT integration and conversational interfaces
-
-Later modules explore Node-RED flows, sensor-data visualization, publish/subscribe patterns, web-service integration, and introductory conversational experiences with Dialogflow and Google Actions.
-
-## Repository map
-
-| Path | Purpose |
+| Read | Use it for |
 | --- | --- |
-| [ICP-1 through ICP-7](ICP-1) | Early exercises in IoT and sensor programming |
-| [MOD2-ICP1 through MOD2-ICP7](MOD2-ICP1) | Second-module exercises around integration and cognitive interfaces |
-| [LAB1](LAB1) | Laboratory work |
-| [PROJECT](PROJECT) | Course project materials |
+| [Project walkthrough](docs/PROJECT_GUIDE.md) | Purpose, workflow, repository map, and a concrete example |
+| [Code and artifact reference](docs/CODE_REFERENCE.md) | Important files, functions, classes, and their responsibilities |
+| [Development guide](docs/DEVELOPMENT.md) | Setup, configuration, commands, tests, and remaining limitations |
 
-**Note:** Some exercises require external hardware, vendor accounts, APIs, or platforms that have changed since the work was created. There is no single supported install command for the entire repository.
+## Explore locally
 
-## Additional documentation
+Local checks require Python and Node.js 22 or later:
 
-See the [repository wiki](https://github.com/tariksalay/iot-robotics/wiki) for per-exercise writeups where available.
+```sh
+node --test tests/nodes.test.js
+python -m unittest discover -s tests -v
+python MOD2-ICP3/SourceCode/twitterTest.txt --text "Local coursework preview"
+```
 
-## Portfolio context
+These commands do not start hardware, import live flows, or send a tweet.
 
-This repository documents my early hands-on experiments connecting hardware, data collection, and software workflows. It is preserved as learning work, not presented as a production IoT platform or a currently supported robotics system.
+## Validation and scope
 
-[GitHub profile](https://github.com/tariksalay)
+Three Node.js tests pass for conversion/lowercase handlers and one Python test passes for the Twitter preview. Physical hardware, live Node-RED flows, the duplicate legacy ML app, and external APIs were not exercised.
+
+
+
+---
+
+[GitHub profile](https://github.com/tariksalay) · [Portfolio](https://tariksalay.github.io/) · [Earlier README](README_HISTORY.md)
+
+The earlier README is preserved as historical context; the guides above describe this branch's implementation.
